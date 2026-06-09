@@ -1,0 +1,210 @@
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #43a4ff;
+width: 100%;
+height: 14vh;
+color: white;
+font-size: 2vh;
+}
+header img,
+footer img {
+padding-left: 2vw;
+height: auto;
+max-width: 100%;
+}
+header ul,
+footer ul {
+padding-right: 3vw;
+list-style-type: none;
+}
+header span,
+footer span {
+font-style: italic;
+font-size: 2vh;
+}
+header li,
+footer li {
+padding-left: 2vw;
+}
+header p,
+footer p {
+margin: 0 auto;
+}
+.logo-container {
+display: flex;
+align-items: center;
+}
+.around-word {
+margin-left: 8px; 
+font-size: 3vh; 
+color: white; 
+}
+@media (max-width: 1200px){
+header{
+flex-direction: column;
+align-items: flex-start;
+}
+}
+nav{
+top: 0;
+height: 6vh;
+width: 100%;
+background-color: #27272781;
+font-size: 2vh;
+font-weight: bold;
+position: sticky;
+border-bottom: 1px solid #000000;
+z-index: 100
+}
+nav ul{
+list-style-type: none;
+justify-content: flex-start;
+align-items: center;
+padding: 0;
+margin: 0;
+width: 100%;
+height: auto;
+}
+nav span {
+  display: inline-block;       /* чтобы можно было задать ширину/высоту */
+  box-sizing: border-box;      /* чтобы padding и border учитывались внутри width */
+  width: 193px;                /* нужная вам ширина */
+  padding: 0.5vh 2vw;          /* меньшая высота, большая ширина */
+  text-align: center;
+  font-size: 12px;             /* уменьшенный размер текста */
+  margin-left: 15px;
+  color: #ffffff;
+  background-color: #000000;
+  border: 1px solid #000;
+  transition:               /* плавный переход при наведении */
+    background-color 0.2s,
+    color 0.2s,
+    border 0.2s,
+    box-shadow 0.2s;
+}
+nav span:hover {
+  background-color: #fff;      /* остаётся белым, можно убрать, если не меняется */
+  color: #000;                 /* текст остаётся чёрным */
+  border: 2.5px solid #000;    /* более толстая рамка на ховере */
+  box-shadow: 0.25vw 0.7vh #000; /* тень при наведении */
+}
+.clearfix{
+display: flex;
+}
+.reviews-section {
+background-color: #ffffff;
+padding: 4vh 2vw;
+border-top: 1px solid #000;
+}
+.section-title {
+text-align: center;
+font-size: 4vh;
+font-style: oblique;
+margin-bottom: 12vh;
+}
+.review-item {
+max-width: 600px;
+margin: 2vh auto; 
+background: #30e0ff;
+padding: 2vh;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+border:1px solid #000; 
+margin-bottom: 3vh;
+}
+.review-text {
+font-size: 2.5vh;
+}
+.review-author {
+font-size: 2vh;
+font-weight: bold;
+margin-top:1vh;
+}
+.reaction-buttons{
+margin-top:2vh; 
+display:flex; 
+gap:2vw; 
+justify-content:center;
+}
+.reaction-btn {
+background-color: #b6faff;
+color:#000000; 
+transition: all .3s ease; 
+border-color: #0036ac;
+}
+.reaction-btn .icon-img {
+width: 4vh;
+height: 4vh;
+vertical-align: middle;
+margin-right: 0.5em;
+color: #2ff7ed;
+transition: filter 0.3s ease;
+}
+.like-btn .icon-img.active {
+filter: invert(44%) sepia(66%) saturate(747%) hue-rotate(78deg) brightness(97%) contrast(86%);
+}
+.dislike-btn .icon-img.active {
+filter: invert(33%) sepia(77%) saturate(749%) hue-rotate(-50deg) brightness(97%) contrast(86%);
+}
+#scrollToTopBtn {
+position: fixed;
+bottom: 40px;
+right: 40px;
+background: none;
+border: none;
+cursor: pointer;
+z-index: 1000;
+}
+#scrollToTopBtn img {
+width: 50px; 
+height: 50px;
+}
+#footer-section {
+width: 97.9%;
+background: linear-gradient(135deg, #00c6ff, #0072ff);
+padding: 20px;
+display: flex;
+justify-content: space-between; 
+align-items: center;
+}             
+.left-container {
+display: flex;
+align-items: center;
+}
+.logo-container {
+display: flex;
+align-items: center;
+}
+.logo-container img {
+height: 10vh; 
+}
+.around-word {
+margin-left: 8px;
+font-size: 3vh; 
+}
+.center-container {
+flex: 1; 
+display: flex;
+justify-content: center; 
+color: #fff;
+}
+.center-container ul {
+list-style-type: none;
+padding: 0;
+margin: 0;
+}
+.center-container p {
+margin: 0;
+}
+.right-container {
+display: flex;
+gap: 10px; 
+position: relative;
+left: -120px; 
+}
+.right-container .icon {
+width: 40px; 
+height: auto;
+}
